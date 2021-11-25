@@ -99,7 +99,7 @@ namespace RestExercise4.Controllers
         //Asks the Manager to delete the item with the specific id
         //Returns null if the item was not found
         //Notice the "{id}" part of the annotation, this makes the URI to the object expect a /int
-        //Here we specify that it is only requests coming from https://zealand.dk
+        //Here we specify that it is only requests coming from https://zealand.dk that is allowed
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [EnableCors(Startup.AllowOnlyZealandOriginPolicyName)]
