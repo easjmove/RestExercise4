@@ -60,7 +60,7 @@ namespace RestExercise4
             app.UseRouting();
 
             //What the default policy should be
-            app.UseCors("allowAll");
+            app.UseCors(AllowAllPolicyName);
 
             app.UseAuthorization();
 
